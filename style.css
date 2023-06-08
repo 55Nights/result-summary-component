@@ -1,0 +1,156 @@
+:root{
+    /*Primary*/
+    --LightRed: hsl(0, 100%, 67%);
+    --LightRedB: hsla(0, 100%, 90%, 0.2);
+    --OrangeYellow: hsl(39, 100%, 56%);
+    --OrangeYellowB: hsla(39, 100%, 56%, 0.2);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --GreenTealB: hsla(166, 100%, 37%, 0.2);
+    --CobaltBlue: hsl(234, 85%, 45%);
+    --CobaltBlueB: hsla(234, 85%, 45%, 0.2);
+    /*Gradients*/
+    --LightSlateBlue /*(background)*/: hsl(252, 100%, 67%);
+    --LightRoyalBlue /*(background)*/: hsl(241, 81%, 54%);
+    --VioletBlue /*(circle)*/: hsla(256, 72%, 46%, 1);
+    --PersianBlue /*(circle)*/: hsla(241, 72%, 46%, 0);
+    /*Neutral*/ 
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+    --BottomRadius: 25px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+   font-size: 18px;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom-left-radius: var(--BottomRadius);
+    border-bottom-right-radius: var(--BottomRadius);
+   
+    background: linear-gradient(to bottom, var(--LightSlateBlue), var(--LightRoyalBlue));
+}
+.result h2{
+    padding-top: 1.5em;
+    color: var(--LightLavender);
+    font-size: 24px;
+}
+.result p {
+    color: var(--LightLavender);
+    padding-bottom: 2.5em;
+}
+
+.result p span {
+    display: block;
+    color: var(--White);
+    font-weight: 800;
+    margin-bottom: 0.5em;
+    font-size: larger;
+}
+.circle{ 
+    position: relative;    
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    width: 150px;
+    height: 150px;
+
+    border: 0.000000000001px ;
+    border-radius: 50%;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--VioletBlue), var(--PersianBlue));
+}
+.circle p{
+    color: var(--LightLavender);
+    padding-bottom: 0;
+    font-size: smaller;
+}
+.circle p span{
+    color: var(--White);
+    display: block;
+    font-size: 60px;
+    padding-top: 0.5em;
+    margin: 0;
+   
+}
+
+.summary{
+    margin-top: 1em;
+    padding: 1em;
+    
+}
+.summary h2{
+    font-size: larger;
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.color-light-red{
+    color: var(--LightRed);
+    background-color: var(--LightRedB);
+    font-weight: bolder;
+}
+.black-font{
+    color: rgba(0, 0, 0, 0.486);
+}
+.card span{
+    color: black;
+    font-weight: bolder;
+}
+
+.color-orange-yellow{
+    color: var(--OrangeYellow);
+    background-color: var(--OrangeYellowB);
+}
+
+.color-green-teal{
+    color: var(--GreenTeal);
+    background-color: var(--GreenTealB);
+}
+
+.color-cobalt-blue{
+    color: var(--CobaltBlue);
+    background-color: var(--CobaltBlueB);
+}
+
+
+.btn{
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--DarkGrayBlue);
+    color: var(--White);
+    
+}
+
+
+
+/*---------------------*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
