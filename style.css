@@ -142,6 +142,8 @@
     border-radius: 15px;
     background-color: var(--DarkGrayBlue);
     color: var(--White);
+    cursor: pointer;
+}
     
 }
 .btn:hover,:active{
